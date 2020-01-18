@@ -1,0 +1,7 @@
+
+test/.idea/compiler.xml
+*.class
+test/.idea/misc.xml
+test/.idea/vcs.xml
+test/.idea/$PRODUCT_WORKSPACE_FILE$
+test/test.iml
