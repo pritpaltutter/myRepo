@@ -5,3 +5,10 @@ test/.idea/misc.xml
 test/.idea/vcs.xml
 test/.idea/$PRODUCT_WORKSPACE_FILE$
 test/test.iml
+practice/target/classes/META-INF/practice.kotlin_module
+practice/target/classes/META-INF/practice.kotlin_module
+practice/target/maven-archiver/pom.properties
+practice/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+practice/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+practice/target/test-1.0-SNAPSHOT.jar
+practice/.idea/.name
