@@ -1,8 +1,10 @@
+DataStructure/TreeMapSample.class
 comparableComparator/MovieMgr.class
 stream/FilterWords.class
 DataStructure/Tree/TreeTraversal.class
 regex/RegexClass.class
 DataStructure/Tree/Node.class
+collection/examples/CollectionUtil.class
 collection/examples/OptionalContainer.class
 stream/TestStream.class
 collection/examples/List/CircularList$Node.class

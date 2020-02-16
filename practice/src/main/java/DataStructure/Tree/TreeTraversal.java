@@ -1,5 +1,7 @@
 package DataStructure.Tree;
 
+import java.util.Stack;
+
 public class TreeTraversal {
 
 private static Node rootNode;
@@ -34,6 +36,9 @@ static {
         System.out.println();
         System.out.println("Zigzag Traversal");
         treeTraversal.zigzagTraversal(rootNode);
+        System.out.println();
+        System.out.println("Level order Traversal");
+        treeTraversal.levelOrderTraversal(rootNode,2);
     }
 
     public void preOrderTraversal(Node rootNode){
@@ -69,8 +74,47 @@ static {
 
     public void zigzagTraversal(Node rootNode){
 
+
+        Stack<Node> leftRight = new Stack<Node>();
+        Stack<Node> rightLeft = new Stack<Node>();
+
+        System.out.print(rootNode.getValue()+"-->");
+        leftRight.push(rootNode);
+
+        while (!leftRight.isEmpty()|| !rightLeft.isEmpty()){
+            while(!leftRight.isEmpty()) {
+                Node node = leftRight.pop();
+                if(node.getRight() != null) {
+                    System.out.print(node.getRight().getValue() + "-->");
+                    rightLeft.push(node.getRight());
+                }
+                if(node.getLeft() != null) {
+                    System.out.print(node.getLeft().getValue() + "-->");
+                    rightLeft.push(node.getLeft());
+                }
+            }
+            while(!rightLeft.isEmpty()){
+                Node node = rightLeft.pop();
+                if(node.getLeft() != null) {
+                    System.out.print(node.getLeft().getValue() + "-->");
+                    rightLeft.push(node.getLeft());
+                }if(node.getRight() != null) {
+                    System.out.print(node.getRight().getValue() + "-->");
+                    rightLeft.push(node.getRight());
+                }
+            }
+        }
     }
 
+    public void levelOrderTraversal(Node node, int level) {
 
+        if (level < 1) {
+            System.out.print(node.getValue()+"-->");
+            return;
+        } else {
+            levelOrderTraversal(node.getLeft(), level - 1);
+            levelOrderTraversal(node.getRight(), level - 1);
+        }
+    }
 
 }
