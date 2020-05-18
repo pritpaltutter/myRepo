@@ -1,5 +1,5 @@
 
-Java Record
+Introduction to Java 14 : Java Record
 
 A Java Record is a special kind of Java class which has a concise syntax for defining immutable data-only classes. Java Record instances can be useful for holding records returned from a database query, records returned from a remote service call, records read from a CSV file, or similar types of use cases.
 
